@@ -1,105 +1,136 @@
-'use strict';
+// 'use strict';
 
-console.log('hello');
+// // // console.log('hello');
 
-let username = prompt('What is your name?');
-alert('Greetings ' + username + '! Answer the following wisely');
+// let userName = prompt('What is your name?');
+// alert('Greetings ' + userName + '! Answer the following wisely');
+// let score = 0;
 
-function questionOne() {
-  let oneQuestion = prompt('Did I attend college in Cali? Y/N').toLowerCase();
+// function questionOne() {
+//   let question = prompt('Did I attend college in Cali? Y/N').toLowerCase();
 
-  if (oneQuestion === 'yes' || oneQuestion === 'y')
+//   if (question === 'yes' || question === 'y') {
+//     alert('Nope!');
+//     score++;
+//   } else if (question === 'no' || question === 'n') {
+//     alert('Correct! I atteneded in Washington');
+//   }
+// }
+// function questionTwo() {
+//   let question = prompt('Is my favorite color black?').toLocaleLowerCase();
 
-    alert('Nope!');
+//   if (question === 'yes' || question === 'y') {
+//     alert('Nope! I have no favorite color!');
+//     score++;
+//   } else if (question === 'no' || question === 'n') {
+//     alert('Correct! I have no favorite color!');
+//   }
+// }
+// function questionThree() {
+//   let question = prompt('Do I have children?').toLowerCase();
 
-  else if (oneQuestion === 'no' || oneQuestion === 'n')
-    alert('Correct! I atteneded in Washington');
-}
-function questionTwo() {
-  let twoQuestion = prompt('Is my favorite color black?').toLocaleLowerCase();
+//   if (question === 'yes' || question === 'y') {
+//     alert('Correct, I have a crazy two year old.');
+//     score++;
+//   } else if (question === 'no' || question === 'n')
+//     alert('Incorrect! He drives me crazy but I love him!');
+// }
+// function questionFour() {
+//   let question = prompt(
+//     'Am I the oldest in my family of three siblings?'
+//   ).toLowerCase();
 
-  if (twoQuestion === 'yes' || twoQuestion === 'y')
-    alert('Nope! I have no favorite color!');
+//   if (question === 'yes' || question === 'y') {
+//     alert('I wish, middle child.');
+//     score++;
+//   } else if (question === 'no' || question === 'n') {
+//     alert('Correct, I am definitely a middle child.');
+//   }
+// }
 
-  else if (twoQuestion === 'no' || twoQuestion === 'n')
-    alert('Correct! I have no favorite color!');
-}
-function questionThree() {
-  let threeQuestion = prompt('Do I have children?').toLowerCase();
+// function questionFive() {
+//   let question = prompt('Do I know how to box?').toLowerCase();
 
-  if (threeQuestion === 'yes' || threeQuestion === 'y')
-    alert('Correct, I have a crazy two year old.');
+//   if (question === 'yes' || question === 'y') {
+//     alert('Facts!');
+//   } else if (question === 'no' || question === 'n') {
+//     alert('I can a little');
+//   }
+// }
 
-  else if (threeQuestion === 'no' || threeQuestion === 'n')
-    alert('Incorrect! He drives me crazy but I love him!');
-}
-function questionFour() {
-  let fourQuestion = prompt('Am I the oldest in my family of three siblings?').toLowerCase();
+// function numberGuessGame() {
+//   //   //   // Guessing number game
 
-  if (fourQuestion === 'yes' || fourQuestion === 'y')
-    alert('I wish, middle child.');
+//   // console.log(sixQuestion);
+//   //           0 1 2 3 4 5 6 7 8 9
+//   // let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-  else if (fourQuestion === 'no' || fourQuestion === 'n')
-    alert('Correct, I am definitely a middle child.');
-}
-function questionFive() {
-  let fiveQuestion = prompt('Do I know how to box?').toLowerCase();
+//   //outer for loop (slow loop)
+//   // prompt try again
+//   //
 
-  if (fiveQuestion === 'yes' || fiveQuestion === 'y')
-    alert('Facts!');
+//   let tries;
 
-  else if (fiveQuestion === 'no' || fiveQuestion === 'n')
-    alert('I can a little');
-}
+//   for (tries = 0; tries < 4; tries++) {
+//     let question = prompt('Guess a number from 1-10');
+//     // eslint-disable-next-line eqeqeq
+//     if (question == 7) {
+//       alert('Bingo!');
+//       score++;
+//       break;
+//     } else if (question < 7) {
+//       alert('To low');
+//     } else if (question > 7) {
+//       alert('To high');
+//     } else {
+//       alert('not a valid number');
+//     }
+//   }
+//   if (tries === 4) alert('The correct answer is 7');
+// }
 
-function numberGuessGame() {
-  // Guessing number game
+// function fruitGuessingGame() {
+//   //outer for loop (slow loop)
+//   // prompt try again
+//   //
+//   let fruits = [
+//     'pineaple',
+//     'watermelon',
+//     'orange',
+//     'apple',
+//     'strawberry',
+//     'peach',
+//     'pomegrante',
+//   ];
+//   let guess = 6;
 
-  let sixQuestion = prompt('Guess a number');
+//   for (let j = 0; j < 6; j++) {
+//     let answer = prompt('What are my favorite fruits?');
+//     let foundMatch = false;
+//     for (let i = 0; i < fruits.length; i++) {
+//       if (answer.toLowerCase() === fruits[i]) {
+//         foundMatch = true;
+//         break;
+//       }
+//     }
+//     if (foundMatch) {
+//       alert('You got it!');
+//       score++;
+//       break;
+//     } else {
+//       --guess;
+//       alert(`you have ${guess} tries left`);
 
-  // console.log(sixQuestion)
-  //           0 1 2 3 4 5 6 7 8 9
-  let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+//     }
+//   }
+//   alert('Possible answers; pineaple, watermelon, orange, apple, strawberry, peach, or pomegrante,');
+//   alert(`thank you for playing ${userName}. You got ${score} out of 7 correct `);
+// }
 
-  //outer for loop (slow loop)
-  // prompt try again
-  //
-  for (let i = 0; i < array.length; i++) {
-    console.log(i);
-    if (sixQuestion < array[6]) {
-      alert('Guess to low try again');
-      sixQuestion = prompt('Guess a number');
-
-    } else if (sixQuestion > array[6]) {
-      alert('Guess to high try again');
-      sixQuestion = prompt('Guess a number');
-    }
-    else if (sixQuestion === array[6]) {
-      alert('Bingo!');
-      break;
-    }
-  }
-}
-function fruitGuessingGame() {
-
-  //outer for loop (slow loop)
-  // prompt try again
-  //
-  let juice = ['pineaple', 'watermelon', 'orange', 'apple', 'strawberry', 'peach', 'pomegrante'];
-
-  let sevenQuestion = prompt('What is my favorite fruit juice? Pineaple, watermelon, orange, apple, strawberry, peach, or pomegrante?');
-
-  for (let i = 0; i < juice.length; i++) {
-    if (juice[i] === 'watermelon' || juice[i] === 'apple' || juice[i] === 'pomegrante')
-      alert('Great Guess!');
-    break;
-  }
-}
-
-questionOne();
-questionTwo();
-questionThree();
-questionFour();
-questionFive();
-numberGuessGame();
-fruitGuessingGame();
+// questionOne();
+// questionTwo();
+// questionThree();
+// questionFour();
+// questionFive();
+// numberGuessGame();
+// fruitGuessingGame();
