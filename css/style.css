@@ -19,13 +19,12 @@ h3{text-align: center;
   font-size: 18px;
 }  
 p{
-  color: rgb(100, 71, 71);
+  color: rgb(9, 9, 9);
   text-align: center;
   margin-top: 2%;
 }
-li{
-  color: rgb(100, 71, 71);
+ li {
+  color: rgb(7, 7, 7);
   text-align:center;
   margin-top: 2%;
-
 }
